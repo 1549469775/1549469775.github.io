@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.child {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: myfirst 5s;
+    -webkit-animation: myfirst 5s; /* Safari 与 Chrome */
+}
+
+@keyframes myfirst {
+    /* 动画一开始的时候 */
+    0% {
+        width: 100px;
+        background: red;
+        margin-left: 10px;
+    }
+/* 动画进行了25% */
+    25% {
+        width: 200px;
+        background: yellow;
+        margin-left: 20px;
+    }
+/* 动画进行了50% */
+    25% {
+        width: 150px;
+        background: blue;
+        margin-left: 15px;
+    }
+    /* 动画进行了100% 即到了最终阶段 */
+    100% {
+        width: 100px;
+        background: green;
+        margin-left: 10px;
+    }
+}
+/* 动画结束之后会变回原样 */
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child">
+    
+        </div>
+    </div>
+</body>
+</html>
