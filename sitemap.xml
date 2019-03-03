@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.xieyaxin.space/2019/03/03/Hexo/</loc>
+    
+    <lastmod>2019-03-03T07:34:02.473Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.xieyaxin.space/2019/03/03/%E5%A4%A7%E5%B8%88/</loc>
     
     <lastmod>2019-03-03T07:32:56.335Z</lastmod>
@@ -9,21 +16,14 @@
   </url>
   
   <url>
-    <loc>http://www.xieyaxin.space/2019/03/03/Hexo/</loc>
-    
-    <lastmod>2019-03-03T07:32:29.926Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xieyaxin.space/categories/index.html</loc>
+    <loc>http://www.xieyaxin.space/about/index.html</loc>
     
     <lastmod>2019-03-03T06:48:29.520Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.xieyaxin.space/about/index.html</loc>
+    <loc>http://www.xieyaxin.space/categories/index.html</loc>
     
     <lastmod>2019-03-03T06:48:29.520Z</lastmod>
     
