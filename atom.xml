@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>失眠先生</title>
+  
+  <subtitle>失眠ING</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.xieyaxin.space/"/>
+  <updated>2019-03-03T06:53:11.616Z</updated>
+  <id>http://www.xieyaxin.space/</id>
+  
+  <author>
+    <name>失眠先生</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo</title>
+    <link href="http://www.xieyaxin.space/2019/03/03/Hexo/"/>
+    <id>http://www.xieyaxin.space/2019/03/03/Hexo/</id>
+    <published>2019-03-02T17:45:40.000Z</published>
+    <updated>2019-03-03T06:53:11.616Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;本Hexo概况简写&quot;&gt;&lt;a href=&quot;#本Hexo概况简写&quot; class=&quot;headerlink&quot; title=&quot;本Hexo概况简写&quot;&gt;&lt;/a&gt;本Hexo概况简写&lt;/h2&gt;&lt;p&gt;本博客部署时执行的命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.xieyaxin.space/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://www.xieyaxin.space/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
