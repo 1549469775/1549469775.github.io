@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[CSS动画学习]]></title>
     <url>%2F2019%2F03%2F03%2FCSS%E5%8A%A8%E7%94%BB%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[前言 本章打算深入了解一下CSS的动画使用，麻蛋，除了这么多年，每次都是用的时候查一下，一点也不尊重动画了。 CSS3 @keyframes规则要创建CSS3动画，@keyframes这个规则时必不可免要学习的。@keyframes规则是创建动画，规则内指定一个CSS样式和动画将逐步从目前的样式改变为新样式。之前这样的效果我们可以用JQuery实现，现在CSS中集成了自然是再好不过的了。 属性 Chrome IEdage Firfox 苹果的 opera @keyframes 43.0 4.0 -webkit- 10.0 16.0 5.0 -moz- 9.0 4.0 -webkit- 30.0 15.0 -webkit- 12.0 -o- animation 43.0 4.0 -webkit- 10.0 16.0 5.0 -moz- 9.0 4.0 -webkit- 30.0 15.0 -webkit- 12.0 -o-]]></content>
+    <content type="text"><![CDATA[前言 本章打算深入了解一下CSS的动画使用，麻蛋，除了这么多年，每次都是用的时候查一下，一点也不尊重动画了。 CSS3 @keyframes规则要创建CSS3动画，@keyframes这个规则时必不可免要学习的。@keyframes规则是创建动画，规则内指定一个CSS样式和动画将逐步从目前的样式改变为新样式。之前这样的效果我们可以用JQuery实现，现在CSS中集成了自然是再好不过的了。 属性 Chrome IEdage Firfox 苹果的 opera @keyframes 43.0 4.0 -webkit- 10.0 16.0 5.0 -moz- 9.0 4.0 -webkit- 30.0 15.0 -webkit- 12.0 -o- animation 43.0 4.0 -webkit- 10.0 16.0 5.0 -moz- 9.0 4.0 -webkit- 30.0 15.0 -webkit- 12.0 -o- 测试]]></content>
       <categories>
         <category>css</category>
       </categories>
