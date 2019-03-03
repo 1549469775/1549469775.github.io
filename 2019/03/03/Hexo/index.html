@@ -130,7 +130,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://www.xieyaxin.space/2019/03/03/Hexo/1551585961831.png">
 <meta property="og:image" content="http://www.xieyaxin.space/2019/03/03/Hexo/1551586086551.png">
-<meta property="og:updated_time" content="2019-03-03T06:58:19.221Z">
+<meta property="og:updated_time" content="2019-03-03T07:32:29.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="本Hexo概况简写本博客部署时执行的命令： 12hexo ghexo d 禁用命令： 1hexo clean  //会删除public下的所有文件 文档编辑器考虑到文档需要插入图片，实在是不想在折腾图片的事情了，现在从百度的方法记录下来：  将post_asset_folder后面的值改为true    安装hexo-asset-image 配置Typora编辑器图片保存的命令    Typora">
@@ -407,7 +407,7 @@
                 
               
 
-              <time title="创建时间：2019-03-03 01:45:40 / 修改时间：14:58:19" itemprop="dateCreated datePublished" datetime="2019-03-03T01:45:40+08:00">2019-03-03</time>
+              <time title="创建时间：2019-03-03 01:45:40 / 修改时间：15:32:29" itemprop="dateCreated datePublished" datetime="2019-03-03T01:45:40+08:00">2019-03-03</time>
             
 
             
@@ -505,6 +505,8 @@
 <p>比较简陋，只能输出完成之后的信息，你可以用<code>spawn</code>重新实现一下，对于我来说能用就行</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">"child_process"</span>).exec;</span><br><span class="line">exec(<span class="string">"git add . &amp;&amp; git commit -m 'newPage'"</span>, (err, stdout, stderr) =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"err:\n"</span>, err);</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"stderr:\n"</span>, stderr);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"git暂存与提交成功"</span>);</span><br><span class="line">    exec(<span class="string">"git push"</span>, (err, stdout, stderr) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (err) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"err:\n"</span>, err);</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"stderr:\n"</span>, stderr);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"git已成功推送"</span>);</span><br><span class="line">        exec(<span class="string">"hexo g"</span>, (err, stdout, stderr) =&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span> (err) &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"err:\n"</span>, err);</span><br><span class="line">                <span class="keyword">return</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"stderr:\n"</span>, stderr);</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"hexo 静态站点生成"</span>);</span><br><span class="line">            exec(<span class="string">"hexo d"</span>, (err, stdout, stderr) =&gt; &#123;</span><br><span class="line">                <span class="keyword">if</span> (err) &#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"err:\n"</span>, err);</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"stderr:\n"</span>, stderr);</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"HEXO已部署"</span>);</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>注意：执行时确保有更改，不然提交出错，不过没什么影响。</p>
+<h2 id="有关hexo对本地文章进行分类"><a href="#有关hexo对本地文章进行分类" class="headerlink" title="有关hexo对本地文章进行分类"></a>有关hexo对本地文章进行分类</h2><p>引用链接：</p>
+<p><a href="https://blog.csdn.net/maosidiaoxian/article/details/85220394" target="_blank" rel="noopener">https://blog.csdn.net/maosidiaoxian/article/details/85220394</a></p>
 
       
     </div>
@@ -544,8 +546,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/03/小说/一场游戏一场梦/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/03/大师/" rel="prev" title="大师">
+                大师 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -731,7 +733,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#本Hexo概况简写"><span class="nav-number">1.</span> <span class="nav-text">本Hexo概况简写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档编辑器"><span class="nav-number">1.1.</span> <span class="nav-text">文档编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一键备份与提交"><span class="nav-number">1.2.</span> <span class="nav-text">一键备份与提交</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#本Hexo概况简写"><span class="nav-number">1.</span> <span class="nav-text">本Hexo概况简写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档编辑器"><span class="nav-number">1.1.</span> <span class="nav-text">文档编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一键备份与提交"><span class="nav-number">1.2.</span> <span class="nav-text">一键备份与提交</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有关hexo对本地文章进行分类"><span class="nav-number">2.</span> <span class="nav-text">有关hexo对本地文章进行分类</span></a></li></ol></div>
             
 
           </div>
@@ -782,7 +784,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共357字</span>
+  <span class="post-count">博客全站共380字</span>
 </div>
 
         
