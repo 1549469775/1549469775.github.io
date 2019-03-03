@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS动画</title>
+</head>
+<style>
+    .child {
+        margin: 50px;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        animation: myfirst 5s;
+        -webkit-animation: myfirst 5s; /* Safari 与 Chrome */
+    }
+
+    @keyframes myfirst {
+        from {
+            background: red;
+        }
+
+        to {
+            background: yellow;
+        }
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+</body>
+
+</html>

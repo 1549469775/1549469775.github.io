@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xieyaxin.space/"/>
-  <updated>2019-03-03T07:32:56.335Z</updated>
+  <updated>2019-03-03T08:24:39.967Z</updated>
   <id>http://www.xieyaxin.space/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS动画学习</title>
+    <link href="http://www.xieyaxin.space/2019/03/03/CSS%E5%8A%A8%E7%94%BB%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://www.xieyaxin.space/2019/03/03/CSS动画学习/</id>
+    <published>2019-03-03T07:59:04.000Z</published>
+    <updated>2019-03-03T08:24:39.967Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;前言&lt;/p&gt;
+&lt;p&gt;本章打算深入了解一下CSS的动画使用，麻蛋，除了这么多年，每次都是用的时候查一下，一点也不尊重动画了。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://www.xieyaxin.space/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://www.xieyaxin.space/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>大师</title>

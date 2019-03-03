@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>背景图像</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<style>
+    .bg {
+        width: 500px;
+        height: 700px;
+        overflow: auto;
+        padding-left: 50px;
+    }
+
+    .parent {
+        width: 500px;
+        height: 500px;
+        overflow: auto;
+    }
+
+    .bg {
+        /* 背景颜色 */
+        background-color: aqua;
+        /* 指定对象的背景图像，可以是真实路或使用渐变创建的背景图像 */
+        /*可以设置多个背景图片,多个会重叠  */
+        background-image: url('./images/favicon.ico'), url('./images/b.jpg');
+        /* background-image: linear-gradient(red,blue); */
+
+        /* 背景图片不重复,就只有一个 */
+        background-repeat: no-repeat;
+        /* 背景图片水平平铺 */
+        /* background-repeat: repeat-x; */
+        /* 背景图片竖直平铺 */
+        /* background-repeat: repeat-y; */
+        /* 背景图片自动调整至填充整个容器CSS3 */
+        /* background-repeat: round; */
+        /* 背景图片以相同的间距平铺且填满整个容器或某个方向 */
+        /* 这个火狐不太兼容CSS3 */
+        /* background-repeat: space; */
+
+        /* 背景图片相对于窗口固定 */
+        /* background-attachment: fixed; */
+        /* 背景图片相对于元素固定，元素滚动时背景不滚动，窗体滚动时背景才滚动 */
+        background-attachment: scroll;
+        /* 背景图像相对于内容固定 */
+        /* background-attachment: local; */
+
+        /* 背景图片横向纵向居中 */
+        background-position: center;
+        /* 背景图片水平方向上向左开始填充,就是向左对齐 */
+        /* background-position: left; */
+        /* background-position: right; */
+        /* background-position: top; */
+        /* background-position: bottom; */
+        /* 长度，每个像素前必须置顶一个边界关键字 */
+        /* 以下表示背景距离底边界还有10个像素 */
+        /* background-position: bottom 10px; */
+        /* 以下表示背景距离左边和底边界还有10个像素 */
+        /* background-position: left bottom 10px; */
+        /* 如果提供两个值，那么第一个用于横坐标，第二个用于纵坐标 */
+        /* 如果提供一个值，该值用于很坐标，纵坐标默认50% */
+        /* background-position: 50px; */
+
+        /* padding-box表示从（包含）padding处开始显示背景 */
+        /* Border-box表示从（包含）border处显示图像 */
+        /* content-box 表示从（包含）content处显示背景 */
+        background-origin: border-box;
+
+        /* padding-box表示从（不包含）padding处开始裁剪背景 */
+        /* border-box表示从（不包含）border处裁剪图像 */
+        /* content-box 表示从content处显示背景 */
+        background-clip: border-box;
+
+        /* 背景图片真实大小 */
+        /* background-size: auto; */
+        /* 将背景片等比例缩放到完全覆盖容器，可能会超出容器 */
+        /* background-size: cover; */
+        /* 背景图片缩放宽或者高知道，容器完全包含背景图像 */
+        /* background-size: contain; */
+        /* 可以设置两个尺寸百分比，一个宽，一个高 */
+        background-size: 50% 50%;
+
+        /* 除了background-color,其他都是css属性 */
+    }
+</style>
+
+<body>
+    <h1>背景图像测试CSS</h1>
+
+    <div class="parent">
+        <div class="bg">
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+            <div><button>ssss</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
