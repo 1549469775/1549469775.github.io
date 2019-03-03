@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .child {
+        /* margin: 50px; */
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        background-origin: content-box;
+        /* 名称，与动画对应 */
+        animation-name: gogogo;
+        /* 动画时长 */
+        animation-duration: 5s;
+        /* 动画速度曲线 */
+        animation-timing-function: ease-in-out;
+        /* 当动画完成时，是保持结束状态还是回到出事状态，还是两者都要，由这个决定 */
+        animation-fill-mode: both;
+        /* 2s后在执行这个动画 */
+        animation-delay: 2s;
+        /* 播放次数，默认为1 */
+        animation-iteration-count: infinite;
+        /* 规定下一周期是否逆向播放 */
+        animation-direction: reverse;
+        /* 对顶动画是在运行或者暂停，貌似可以js控制 */
+        animation-play-state: running;
+        /* -webkit-animation: myfirst 5s; */
+        /* Safari 与 Chrome */
+    }
+
+    @keyframes gogogo {
+        from {
+            width: 200px;
+            background: red;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        to {
+            width: 0px;
+            background: yellow;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+    <button onclick="pauseOrPlay(event)">暂停</button>
+</body>
+
+<script>
+    function pauseOrPlay(event) {
+        event.preventDefault();
+        let box= document.querySelector(".child")
+        console.log(box);
+        //因为我这样第一次获取不到，所以先设置了暂停
+        if (box.style.animationPlayState=="paused") {
+            box.style.animationPlayState="running";
+        }else{
+            box.style.animationPlayState="paused";
+        }   
+    }
+</script>
+</html>
