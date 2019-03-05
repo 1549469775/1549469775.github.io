@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xieyaxin.space/"/>
-  <updated>2019-03-04T16:21:34.043Z</updated>
+  <updated>2019-03-05T10:35:39.642Z</updated>
   <id>http://www.xieyaxin.space/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="http://www.xieyaxin.space/2019/03/05/JS%E5%89%AA%E5%88%87%E6%9D%BF%E5%A4%8D%E5%88%B6%E6%96%B9%E6%A1%88/"/>
     <id>http://www.xieyaxin.space/2019/03/05/JS剪切板复制方案/</id>
     <published>2019-03-04T16:14:25.000Z</published>
-    <updated>2019-03-04T16:21:34.043Z</updated>
+    <updated>2019-03-05T10:35:39.642Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;JS的剪切板复制方案&quot;&gt;&lt;a href=&quot;#JS的剪切板复制方案&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;JS的剪切板复制方案&quot;&gt;&lt;a href=&quot;#JS的剪切板复制方案&quot; class=&quot;headerlink&quot; title=&quot;JS的剪切板复制方案&quot;&gt;&lt;/a&gt;JS的剪切板复制方案&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;前言&lt;/p&gt;
+&lt;p&gt;JS的剪切板方案&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -88,17 +85,17 @@
     <link href="http://www.xieyaxin.space/2019/03/03/Hexo/"/>
     <id>http://www.xieyaxin.space/2019/03/03/Hexo/</id>
     <published>2019-03-02T17:45:40.000Z</published>
-    <updated>2019-03-03T07:52:05.723Z</updated>
+    <updated>2019-03-05T10:35:50.361Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;本Hexo概况简写&quot;&gt;&lt;a href=&quot;#本Hexo概况简写&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;本Hexo概况简写&quot;&gt;&lt;a href=&quot;#本Hexo概况简写&quot; class=&quot;headerlink&quot; title=&quot;本Hexo概况简写&quot;&gt;&lt;/a&gt;本Hexo概况简写&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;记录一下创建本博客的心路历程而已，给自己看的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本博客部署时执行的命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;禁用命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo clean  //会删除public下的所有文件&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
