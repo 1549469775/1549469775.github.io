@@ -8,7 +8,8 @@
         <category>CSS</category>
       </categories>
       <tags>
-        <tag>-CSS -背景</tag>
+        <tag>css</tag>
+        <tag>背景</tag>
       </tags>
   </entry>
   <entry>
@@ -16,10 +17,10 @@
     <url>%2F2019%2F03%2F05%2FJS%E5%89%AA%E5%88%87%E6%9D%BF%E5%A4%8D%E5%88%B6%E6%96%B9%E6%A1%88%2F</url>
     <content type="text"><![CDATA[JS的剪切板复制方案 前言 JS的剪切板方案 document.execCommand(“Copy”) 该命令可以将选中的文本复制到剪切板里。 12345678910function copy()&#123; var input=document.createElement(&quot;input&quot;); input.value=JSON.stringify(this.json); document.body.appendChild(input); input.select(); document.execCommand(&quot;Copy&quot;); input.className=&quot;input&quot;; input.style.display=&quot;none&quot;; console.log(&quot;复制成功&quot;);&#125; clipboard.js 在HTML5之前，网页上的复制功能还需要用到JS+Flash结合的方法。但是随着HTML5推出的一系列API，使得纯JS实现复制功能能够实现。 自行百度，这个没用过。]]></content>
       <categories>
-        <category>JS</category>
+        <category>js</category>
       </categories>
       <tags>
-        <tag>JS</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -27,10 +28,11 @@
     <url>%2F2019%2F03%2F03%2FCSS-transform%2F</url>
     <content type="text"></content>
       <categories>
-        <category>CSS</category>
+        <category>css</category>
       </categories>
       <tags>
-        <tag>-CSS -动画</tag>
+        <tag>css</tag>
+        <tag>动画</tag>
       </tags>
   </entry>
   <entry>
@@ -41,7 +43,8 @@
         <category>css</category>
       </categories>
       <tags>
-        <tag>-CSS -动画</tag>
+        <tag>css</tag>
+        <tag>动画</tag>
       </tags>
   </entry>
   <entry>

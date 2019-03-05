@@ -4,14 +4,36 @@
 
     
   <url>
+    <loc>http://www.xieyaxin.space/2019/03/05/JS%E5%89%AA%E5%88%87%E6%9D%BF%E5%A4%8D%E5%88%B6%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2019-03-05T11:05:32.747Z</lastmod>
+    <data>
+        <display>
+        <title>JS剪切板复制方案</title>
+        <pubTime>2019-03-04T16:14:25.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+         
+           
+             
+              <breadCrumb title="js" url="http://www.xieyaxin.space/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xieyaxin.space/2019/03/03/@keyframes/</loc>
-    <lastmod>2019-03-05T10:54:43.257Z</lastmod>
+    <lastmod>2019-03-05T11:05:24.387Z</lastmod>
     <data>
         <display>
         <title>Animation和@keyframes</title>
         <pubTime>2019-03-03T07:59:04.000Z</pubTime>
         
-        <tag>-CSS -动画</tag>
+        <tag>css</tag>
+         
+        <tag>动画</tag>
          
          
            
@@ -25,18 +47,20 @@
     
   <url>
     <loc>http://www.xieyaxin.space/2019/03/03/CSS-transform/</loc>
-    <lastmod>2019-03-05T10:50:38.945Z</lastmod>
+    <lastmod>2019-03-05T11:05:14.731Z</lastmod>
     <data>
         <display>
         <title>CSS>transform</title>
         <pubTime>2019-03-03T14:12:33.000Z</pubTime>
         
-        <tag>-CSS -动画</tag>
+        <tag>css</tag>
+         
+        <tag>动画</tag>
          
          
            
              
-              <breadCrumb title="CSS" url="http://www.xieyaxin.space/categories/CSS/"/>
+              <breadCrumb title="css" url="http://www.xieyaxin.space/categories/css/"/>
           
         </display>
     </data>
@@ -45,38 +69,20 @@
     
   <url>
     <loc>http://www.xieyaxin.space/2019/03/05/CSS%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</loc>
-    <lastmod>2019-03-05T10:50:16.129Z</lastmod>
+    <lastmod>2019-03-05T11:05:05.211Z</lastmod>
     <data>
         <display>
         <title>CSS背景图片</title>
         <pubTime>2019-03-05T10:38:28.000Z</pubTime>
         
-        <tag>-CSS -背景</tag>
+        <tag>css</tag>
+         
+        <tag>背景</tag>
          
          
            
              
               <breadCrumb title="CSS" url="http://www.xieyaxin.space/categories/CSS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xieyaxin.space/2019/03/05/JS%E5%89%AA%E5%88%87%E6%9D%BF%E5%A4%8D%E5%88%B6%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2019-03-05T10:49:39.612Z</lastmod>
-    <data>
-        <display>
-        <title>JS剪切板复制方案</title>
-        <pubTime>2019-03-04T16:14:25.000Z</pubTime>
-        
-        <tag>JS</tag>
-         
-         
-           
-             
-              <breadCrumb title="JS" url="http://www.xieyaxin.space/categories/JS/"/>
           
         </display>
     </data>
