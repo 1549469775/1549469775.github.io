@@ -34,6 +34,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Animation和@keyframes]]></title>
+    <url>%2F2019%2F03%2F03%2F%40keyframes%2F</url>
+    <content type="text"><![CDATA[前言 本章打算深入了解一下CSS的动画使用，麻蛋，除了这么多年，每次都是用的时候查一下，一点也不尊重动画了。 CSS3 @keyframes规则要创建CSS3动画，@keyframes这个规则时必不可免要学习的。@keyframes规则是创建动画，规则内指定一个CSS样式和动画将逐步从目前的样式改变为新样式。之前这样的效果我们可以用JQuery实现，现在CSS中集成了自然是再好不过的了。 属性 Chrome IEdage Firfox 苹果的 opera @keyframes 43.0 4.0 -webkit- 10.0 16.0 5.0 -moz- 9.0 4.0 -webkit- 30.0 15.0 -webkit- 12.0 -o- animation 43.0 4.0 -webkit- 10.0 16.0 5.0 -moz- 9.0 4.0 -webkit- 30.0 15.0 -webkit- 12.0 -o- 简单的实例，让一个方块渐变5s 为了节省空间以及方面查看，请自行跳转后按F12查看代码 点击这里查看最简单的用法 CSS3 动画但你用@keyframes创建动画的时候，必须将它绑定到一个选择器上，就如同上述例子，绑定后动画会作用于该元素。 你必须指定至少两个属性： 动画名称 动画时长 123456div&#123; animation: myfirst 5s; -webkit-animation: myfirst 5s; /* Safari 与 Chrome */&#125; 上述代码中声明了一个myfirst动画名，同时注明它的时长时5s,这样你就能够在@keyframes后定义这个动画的运行方式，达到如上述链接的效果。 注意: 您必须定义动画的名称和动画的持续时间。如果省略的持续时间，动画将无法运行，因为默认值是0。 详细攻略动画是使元素从一种样式逐渐变化为另一种样式的效果。 您可以改变任意多的样式任意多的次数。 你可以在@keyframes中以两种方式规定变化的效果以及时间。 关键词from和to等同于百分比0%和100% 百分比，即运行的动画时长，可以进行具体的设置。 Word is poor ,show me the code! 多重动画示例 代码实例用到所有的属性并谢了一些注释，同时提供了一个js函数控制动画运行的按钮 动画的实例 详细属性（可以略过,来自菜鸟教程） 属性 描述 CSS @keyframes 规定动画。 3 animation 所有动画属性的简写属性，除了 animation-play-state 属性。 3 animation-name 规定 @keyframes 动画的名称。 3 animation-duration 规定动画完成一个周期所花费的秒或毫秒。默认是 0。 3 animation-timing-function 规定动画的速度曲线。默认是 “ease”。 3 animation-fill-mode 规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。 3 animation-delay 规定动画何时开始。默认是 0。 3 animation-iteration-count 规定动画被播放的次数。默认是 1。 3 animation-direction 规定动画是否在下一周期逆向地播放。默认是 “normal”。 3 animation-play-state 规定动画是否正在运行或暂停。默认是 “running”。 3 定义了所有属性的动画]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>-CSS -动画</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo]]></title>
     <url>%2F2019%2F03%2F03%2FHexo%2F</url>
     <content type="text"><![CDATA[本Hexo概况简写 记录一下创建本博客的心路历程而已，给自己看的 本博客部署时执行的命令： 12hexo ghexo d 禁用命令： 1hexo clean //会删除public下的所有文件 文档编辑器考虑到文档需要插入图片，实在是不想在折腾图片的事情了，现在从百度的方法记录下来： 将post_asset_folder后面的值改为true 安装hexo-asset-image 配置Typora编辑器图片保存的命令 Typora直接打开_posts进行编写博客 一键备份与提交执行请用node 你的文件名 比较简陋，只能输出完成之后的信息，你可以用spawn重新实现一下，对于我来说能用就行 12345678910111213141516171819202122232425262728293031323334var exec = require("child_process").exec;exec("git add . &amp;&amp; git commit -m 'newPage'", (err, stdout, stderr) =&gt; &#123; if (err) &#123; console.log("err:\n", err); return &#125; console.log("stderr:\n", stderr); console.log("git暂存与提交成功"); exec("git push", (err, stdout, stderr) =&gt; &#123; if (err) &#123; console.log("err:\n", err); return &#125; console.log("stderr:\n", stderr); console.log("git已成功推送"); exec("hexo g", (err, stdout, stderr) =&gt; &#123; if (err) &#123; console.log("err:\n", err); return &#125; console.log("stderr:\n", stderr); console.log("hexo 静态站点生成"); exec("hexo d", (err, stdout, stderr) =&gt; &#123; if (err) &#123; console.log("err:\n", err); return &#125; console.log("stderr:\n", stderr); console.log("HEXO已部署"); &#125;) &#125;) &#125;)&#125;) 注意：执行时确保有更改，不然提交出错，不过没什么影响。 有关hexo对本地文章进行分类引用链接： https://blog.csdn.net/maosidiaoxian/article/details/85220394 分析此next动画发现，用的是$.Velocity.RunSequence(sequence)这是jquery中的动画序列，好用吗？]]></content>
