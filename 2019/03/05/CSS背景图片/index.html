@@ -120,18 +120,18 @@
 
 
 
-  <meta name="description" content="JS的剪切板复制方案 前言 JS的剪切板方案">
+  <meta name="description" content="前言  背景图片示例">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS剪切板复制方案">
-<meta property="og:url" content="http://www.xieyaxin.space/2019/03/05/JS剪切板复制方案/index.html">
+<meta property="og:title" content="CSS背景图片">
+<meta property="og:url" content="http://www.xieyaxin.space/2019/03/05/CSS背景图片/index.html">
 <meta property="og:site_name" content="失眠先生">
-<meta property="og:description" content="JS的剪切板复制方案 前言 JS的剪切板方案">
+<meta property="og:description" content="前言  背景图片示例">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-05T10:35:39.642Z">
+<meta property="og:updated_time" content="2019-03-05T10:42:56.353Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS剪切板复制方案">
-<meta name="twitter:description" content="JS的剪切板复制方案 前言 JS的剪切板方案">
+<meta name="twitter:title" content="CSS背景图片">
+<meta name="twitter:description" content="前言  背景图片示例">
 
 
 
@@ -140,7 +140,7 @@
 
 
 
-  <link rel="canonical" href="http://www.xieyaxin.space/2019/03/05/JS剪切板复制方案/"/>
+  <link rel="canonical" href="http://www.xieyaxin.space/2019/03/05/CSS背景图片/"/>
 
 
 
@@ -150,7 +150,7 @@
   };
 </script>
 
-  <title>JS剪切板复制方案 | 失眠先生</title>
+  <title>CSS背景图片 | 失眠先生</title>
   
 
 
@@ -362,7 +362,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.xieyaxin.space/2019/03/05/JS剪切板复制方案/">
+    <link itemprop="mainEntityOfPage" href="http://www.xieyaxin.space/2019/03/05/CSS背景图片/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="失眠先生">
@@ -379,7 +379,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">JS剪切板复制方案
+          <h2 class="post-title" itemprop="name headline">CSS背景图片
               
             
           </h2>
@@ -404,7 +404,7 @@
                 
               
 
-              <time title="创建时间：2019-03-05 00:14:25 / 修改时间：18:35:39" itemprop="dateCreated datePublished" datetime="2019-03-05T00:14:25+08:00">2019-03-05</time>
+              <time title="创建时间：2019-03-05 18:38:28 / 修改时间：18:42:56" itemprop="dateCreated datePublished" datetime="2019-03-05T18:38:28+08:00">2019-03-05</time>
             
 
             
@@ -441,8 +441,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/05/JS剪切板复制方案/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/03/05/JS剪切板复制方案/" itemprop="commentCount"></span>
+                <a href="/2019/03/05/CSS背景图片/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/03/05/CSS背景图片/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -450,7 +450,7 @@
 
           
           
-             <span id="/2019/03/05/JS剪切板复制方案/" class="leancloud_visitors" data-flag-title="JS剪切板复制方案">
+             <span id="/2019/03/05/CSS背景图片/" class="leancloud_visitors" data-flag-title="CSS背景图片">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -481,21 +481,10 @@
       
 
       
-        <h2 id="JS的剪切板复制方案"><a href="#JS的剪切板复制方案" class="headerlink" title="JS的剪切板复制方案"></a>JS的剪切板复制方案</h2><blockquote>
+        <blockquote>
 <p>前言</p>
-<p>JS的剪切板方案</p>
 </blockquote>
-<a id="more"></a>
-<ol>
-<li>document.execCommand(“Copy”)</li>
-</ol>
-<p>该命令可以将选中的文本复制到剪切板里。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function copy()&#123;</span><br><span class="line">    var input=document.createElement(&quot;input&quot;);</span><br><span class="line">    input.value=JSON.stringify(this.json);</span><br><span class="line">    document.body.appendChild(input);</span><br><span class="line">    input.select();</span><br><span class="line">    document.execCommand(&quot;Copy&quot;);</span><br><span class="line">    input.className=&quot;input&quot;;</span><br><span class="line">    input.style.display=&quot;none&quot;;</span><br><span class="line">    console.log(&quot;复制成功&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>clipboard.js</li>
-</ol>
-<p>在HTML5之前，网页上的复制功能还需要用到JS+Flash结合的方法。但是随着HTML5推出的一系列API，使得纯JS实现复制功能能够实现。</p>
-<p>自行百度，这个没用过。</p>
+<p><a href="/demo/css/background/index.html">背景图片示例</a></p>
 
       
     </div>
@@ -529,8 +518,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/03/CSS-transform/" rel="next" title="CSS>transform">
-                <i class="fa fa-chevron-left"></i> CSS>transform
+              <a href="/2019/03/05/JS剪切板复制方案/" rel="next" title="JS剪切板复制方案">
+                <i class="fa fa-chevron-left"></i> JS剪切板复制方案
               </a>
             
           </div>
@@ -538,10 +527,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/05/CSS背景图片/" rel="prev" title="CSS背景图片">
-                CSS背景图片 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -593,17 +578,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -720,22 +696,6 @@ show_date_time();
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS的剪切板复制方案"><span class="nav-number">1.</span> <span class="nav-text">JS的剪切板复制方案</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
